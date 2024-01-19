@@ -1,0 +1,162 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="text-zinc-500 font-nunito">
+    
+    <div class="grid md:grid-cols-5 h-screen"><!--- content wrapper -->
+        <div class="md:col-span-1 md:flex md:justify-end">
+            <nav class="text-right">
+                <div class="flex justify-between items-center">
+                    <h1 class="font-bold uppercase p-4 border-b border-gray-100 hover:text-gray-700">
+                        <a href="/">Catering</a>
+                    </h1>
+                    <div class="px-4 cursor-pointer md:hidden" id="burger">
+                        <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                          </svg>
+                          
+                    </div>
+                </div>
+                <ul class="text-sm mt-6 hidden absolute top-10 right-0 md:block md:relative md:top-0" id="menu">
+                    <li class="text-zinc-700 font-bold py-1">
+                        <a href="" class="px-4 flex justify-end border-r-4 border-red-400">
+                            <span>Home</span>
+                            <svg class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                            </svg>
+                        </a>
+                          
+                    </li>
+                    <li class="py-1">
+                        <a href="" class="px-4 flex justify-end border-r-4 border-white">
+                            <span>About</span>
+                            <svg class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+                          </svg>
+                        </a>
+                          
+                    </li>
+                    <li class="py-1">
+                        <a href="" class="px-4 flex justify-end border-r-4 border-white">
+                            <span>Contact</span>
+                            <svg class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                          </svg>
+                        </a>
+                          
+                          
+                    </li>
+                </ul>
+            </nav>
+        </div><!-- end nav-->
+
+        <main class="px-16 py-6 bg-gray-100 md:col-span-4">
+            <div class="flex justify-center md:justify-end">
+                <a href="#" class="btn text-red-400 border-red-400 md:border-2 hover:bg-red-400 hover:text-white transition ease-out duration-500">Log in</a>
+                <a href="#" class="btn ml-2 text-red-400 border-red-400 md:border-2 hover:bg-red-400 hover:text-white transition ease-out duration-500">Sign up</a>
+            </div>
+
+            <header>
+                <h2 class="text-zinc-700 text-6xl font-semibold">Recipes</h2>
+                <h3 class="text-2xl font-semibold">For Ninjas</h3>
+            </header>
+
+            <div>
+                <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Latest Recipes</h4>
+
+                <div class="mt-8 grid lg:grid-cols-3 gap-10">
+                    <!-- signup here-->
+                    
+
+                    
+
+                    <div class="border-b border-gray-900/10 pb-12" id="signupForm">
+                        <h2 class="text-base font-semibold leading-7 text-gray-900">Personal Information</h2>
+                        <p class="mt-1 text-sm leading-6 text-gray-600">Use a permanent address where you can receive mail.</p>
+                  
+                        <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+                          <div class="sm:col-span-3">
+                            <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">First name</label>
+                            <div class="mt-2">
+                              <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                            </div>
+                          </div>
+                  
+                          <div class="sm:col-span-3">
+                            <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900">Last name</label>
+                            <div class="mt-2">
+                              <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                            </div>
+                          </div>
+                  
+                          <div class="sm:col-span-4">
+                            <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
+                            <div class="mt-2">
+                              <input id="email" name="email" type="email" autocomplete="email" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                            </div>
+                          </div>
+                  
+                          <div class="sm:col-span-3">
+                            <label for="country" class="block text-sm font-medium leading-6 text-gray-900">Country</label>
+                            <div class="mt-2">
+                              <select id="country" name="country" autocomplete="country-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6">
+                                <option>United States</option>
+                                <option>Canada</option>
+                                <option>Mexico</option>
+                              </select>
+                            </div>
+                          </div>
+                  
+                          <div class="col-span-full">
+                            <label for="street-address" class="block text-sm font-medium leading-6 text-gray-900">Street address</label>
+                            <div class="mt-2">
+                              <input type="text" name="street-address" id="street-address" autocomplete="street-address" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                            </div>
+                          </div>
+                  
+                          <div class="sm:col-span-2 sm:col-start-1">
+                            <label for="city" class="block text-sm font-medium leading-6 text-gray-900">City</label>
+                            <div class="mt-2">
+                              <input type="text" name="city" id="city" autocomplete="address-level2" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                            </div>
+                          </div>
+                  
+                          <div class="sm:col-span-2">
+                            <label for="region" class="block text-sm font-medium leading-6 text-gray-900">State / Province</label>
+                            <div class="mt-2">
+                              <input type="text" name="region" id="region" autocomplete="address-level1" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                            </div>
+                          </div>
+                  
+                          <div class="sm:col-span-2">
+                            <label for="postal-code" class="block text-sm font-medium leading-6 text-gray-900">ZIP / Postal code</label>
+                            <div class="mt-2">
+                              <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    
+                </div>
+
+                <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Most Popular</h4>
+
+                <div class="mt-8">
+                    <!-- signup here-->
+                </div>
+
+                <div class="flex justify-center">
+                    <div class="btn bg-gray-200 text-gray-400 hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50 transition eas-out duration-300">Load More</div>
+                </div>
+
+            </div>
+
+        </main>
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
