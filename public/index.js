@@ -11,6 +11,8 @@ burger.addEventListener('click', () => {
 
 //API
 
+// SIGN UP////////////////////////////////////////////////////////////////////////
+//Create User
 document.getElementById('signupForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent the default form submission
 
