@@ -1,5 +1,3 @@
-const fetch = require('node-fetch');
-
 exports.handler = async function(event, context) {
     const url = 'https://raw.githubusercontent.com/javina89/sb-json/main/catering.json';
 
