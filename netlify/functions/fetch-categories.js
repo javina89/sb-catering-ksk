@@ -2,7 +2,6 @@ exports.handler = async function(event, context) {
     const url = 'https://raw.githubusercontent.com/javina89/sb-json/main/catering.json';
 
     try {
-        console.log(process.env.TEST);
         const response = await fetch(url);
         if (!response.ok) {
             // Not ok, return a 500 error
