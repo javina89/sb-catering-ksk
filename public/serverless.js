@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function fetchCategories() {
-    console.log(process.env.TEST);
     const url = '/.netlify/functions/fetch-categories';
 
     fetch(url)
